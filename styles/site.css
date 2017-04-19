@@ -1,0 +1,48 @@
+/*navbar*/
+.navbar-nav {
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 22px;
+    padding-bottom: 24px;
+}
+
+.navbar-brand {
+    height: 50px;
+    padding-top: 10px;
+}
+
+.navbar {
+    min-height: 50px;
+}
+
+.navbar-toggle {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/*top*/
+#div_top {
+    padding-top: 200px;
+    color: #ffffff;
+    height: 600px;
+    background-image: url(../assets/img/topPic.jpg);
+}
+/*content*/
+#div_about {
+    background-color: #f7f7f7;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#div_about div>div:hover{
+    background-color:#9acfea;
+}
+
+#div_venue {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+

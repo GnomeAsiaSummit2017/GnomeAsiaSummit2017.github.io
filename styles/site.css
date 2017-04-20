@@ -1,10 +1,37 @@
+/*global*/
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+hr {
+    max-width: 150px;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-color: #5e5e5e;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px; }
+
 /*navbar*/
 .navbar-nav {
     padding-left: 70px;
     padding-right: 20px;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
     padding-top: 22px;
     padding-bottom: 24px;
 }
@@ -25,24 +52,30 @@
 
 /*top*/
 #div_top {
-    padding-top: 200px;
+    padding-top: 400px;
     color: #ffffff;
     height: 600px;
     background-image: url(../assets/img/topPic.jpg);
 }
+
 /*content*/
 #div_about {
-    background-color: #f7f7f7;
     padding-top: 10px;
     padding-bottom: 50px;
 }
 
-#div_about div>div:hover{
-    background-color:#9acfea;
+/*#div_about div > div {*/
+/*background-color: #ffffff;*/
+/*border-radius: 20px;*/
+/*box-shadow: 5px 5px 5px #888888;*/
+/*height: 400px;*/
+/*}*/
+
+#div_about div > div:hover {
+    background-color: #f7f7f7;
 }
 
 #div_venue {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-

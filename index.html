@@ -72,10 +72,10 @@
 </nav>
 
 <!--gap-->
-<div style="height: 50px"></div>
+<!--<div style="height: 50px"></div>-->
 
 <!--header-->
-<div id="div_top" class="jumbotron">
+<div id="div_top" class="container-xl">
     <div class="container">
         <h1 id="h1_top">Test</h1>
         <p>this is the subTitle</p>
@@ -84,12 +84,12 @@
 
 <!--content-->
 <!--about-->
-<div id="div_about">
-    <div class="page-header">
-        <h1 id="about" class="text-center">About</h1>
-    </div>
+<div id="div_about" class="container-fluid">
+    <h1 id="about" class="text-center">About</h1>
+    <hr>
     <div class="row">
-        <div id="div_about_gnome" class="col-md-2 col-md-offset-2 text-center">
+        <div id="div_about_gnome" class="col-md-4 text-center">
+            <img src="assets/img/logo.png" height="128" alt="no">
             <h2>GNOME.ASIA SUMMIT</h2>
             <p>GNOME.Asia Summit is the featured annual GNOME Conference in Asia. The event focuses primarily on the
                 GNOME desktop,
@@ -99,7 +99,8 @@
                 technology and future
                 developments.</p>
         </div>
-        <div class="col-md-2 col-md-offset-1 text-center">
+        <div class="col-md-4 text-center">
+            <img src="assets/img/logo.png" height="128" alt="no">
             <h2>Chongqing LUG</h2>
             <p>GNOME.Asia Summit is the featured annual GNOME Conference in Asia. The event focuses primarily on the
                 GNOME desktop,
@@ -109,7 +110,8 @@
                 technology and future
                 developments. </p>
         </div>
-        <div class="col-md-2 col-md-offset-1 text-center">
+        <div class="col-md-4 text-center">
+            <img src="assets/img/logo.png" height="128" alt="no">
             <h2>LINUX STORY</h2>
             <p>GNOME.Asia Summit is the featured annual GNOME Conference in Asia. The event focuses primarily on the
                 GNOME desktop,
@@ -123,12 +125,13 @@
 </div>
 
 <!--gap-->
-<div style="height: 50px"></div>
+<!--<div style="height: 50px"></div>-->
 
 <!--venue-->
-<div id="div_venue">
+<div id="div_venue" class="container-xl">
     <h1 id="venue" class="text-center">Venue</h1>
-    <div id="nyCarousel" class="carousel slide text-center">
+    <hr>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
         <!-- 轮播（Carousel）指标 -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -146,42 +149,50 @@
             <div class="item">
                 <img class="center-block" src="assets/img/topPic.jpg" alt="Third slide">
             </div>
+            <div class="container">
+                <div class="carousel-caption">
+                    <h2>Chongqing Uniersity</h2>
+                    <p>Chongqing University is a key national university located in Chongqing，
+                        China，and a member of the Excellent League. There are 10,000
+                        students in this school, and over 2000 students are major in computer
+                        related coursed.</p>
+                </div>
+            </div>
         </div>
         <!-- 轮播（Carousel）导航 -->
-        <a class="carousel-control left" href="#nyCarousel" role="button"
+        <a class="carousel-control left" href="#myCarousel" role="button"
            data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control right" href="#nyCarousel"
+        <a class="carousel-control right" href="#myCarousel"
            data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-
     </div>
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <h2>Chongqing Uniersity</h2>
-            <p>Chongqing University is a key national university located in Chongqing，
-                China，and a member of the Excellent League. There are 10,000
-                students in this school, and over 2000 students are major in computer
-                related coursed.</p>
-            </blockquote>
-        </div>
-    </div>
+    <!--<div class="row">-->
+        <!--<div class="col-md-10 col-md-offset-1">-->
+            <!--<h2>Chongqing Uniersity</h2>-->
+            <!--<p>Chongqing University is a key national university located in Chongqing，-->
+                <!--China，and a member of the Excellent League. There are 10,000-->
+                <!--students in this school, and over 2000 students are major in computer-->
+                <!--related coursed.</p>-->
+        <!--</div>-->
+    <!--</div>-->
 </div>
 
 <!--sponser-->
-<div id="div_sponsor">
+<div id="div_sponsor" class="container-xl">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="page-header">
                 <h1 id="sponsor" class="text-center">Sponser</h1>
             </div>
-            <p>Sponsors are:<br>
+            <hr>
+            <p><strong>Sponsors are:</strong><br>
                 ◆Featured conference materials and in announcements<br>
-                ◆There exsists networking opportunities.<br>
+                ◆There exsists networking opportunities.<br><br>
                 About 500 participants are expected to attend the Summit from Asia and ohter parts of the world.
                 Sponsors have
                 the chance to connect with the local market, discover new business opportunities, and increase awareness

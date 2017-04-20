@@ -80,7 +80,8 @@ p {
     padding-top: 300px;
     color: #ffffff;
     height: 1024px;
-    background-image: url(../assets/img/top_bg.jpg);
+    /*background-image: url(../assets/img/top_bg.jpg);*/
+    background-image: url("http://i4.buimg.com/567571/a45e52dc73bf4a53.jpg");
 }
 
 #div_top div > hr {

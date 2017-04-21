@@ -26,10 +26,30 @@ p {
     margin-bottom: 20px;
 }
 
-/*navbar*/
-#my_navbar {
-    background-color: rgba(91, 167, 255, 0.3);
-    color: rgba(91, 167, 255, 0.9);
+/*narbar*/
+.main-navbar {
+    margin-bottom: 0;
+    background-color: transparent
+}
+
+.main-navbar .navbar-toggle .icon-bar {
+    background-color: #fff
+}
+
+#navbar > ul > li > a {
+    height: 20px;
+}
+
+.main-navbar a {
+    color: #eee
+}
+
+.main-navbar a:hover {
+    color: #fff
+}
+
+.main-navbar .nav > li > a:focus, .main-navbar .nav > li > a:hover {
+    background-color: transparent
 }
 
 .navbar-nav {
@@ -45,7 +65,7 @@ p {
     color: #0f0f0f;
 }
 
-.navbar-nav > li > a:hover{
+.navbar-nav > li > a:hover {
     background-color: rgba(91, 167, 255, 0.5);
 }
 

@@ -37,7 +37,7 @@
 
 <!-- NAVBAR
 ================================================== -->
-<nav id="my_navbar" class="navbar navbar-fixed-top" role="navigation">
+<nav id="my_navbar" class="navbar navbar-fixed-top main-navbar" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -55,7 +55,7 @@
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse bs-js-navbar-scrollspy">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right text-center">
                 <li class="active"><a id="a_home" href="#div_top">Home</a></li>
                 <li><a id="a_about" href="#div_about_gap">
                     <stong>About</stong>
@@ -64,8 +64,7 @@
                 <li><a id="a_sponsor" href="#div_sponsor">Sponsor</a></li>
                 <li>
                     <form class="navbar-form navbar-left" role="search">
-                        <button id="nav_btn_contact" class="btn btn btn-default navbar-btn" type="button">Contact
-                        </button>
+                        <button id="nav_btn_contact" class="btn btn btn-default navbar-btn" type="button">Contact</button>
                     </form>
                 </li>
             </ul>
@@ -107,7 +106,7 @@
         <hr>
         <div class="row">
             <div id="div_about_gnome" class="col-md-4 text-center">
-                <img src="assets/img/logo.png" height="128" alt="no">
+                <img src="assets/img/gnome-logo.svg" height="128" alt="no">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2>GNOME.ASIA SUMMIT</h2>
@@ -122,7 +121,7 @@
                 </div>
             </div>
             <div class="col-md-4 text-center">
-                <img src="assets/img/logo.png" height="128" alt="no">
+                <img src="assets/img/gnome-logo.svg" height="128" alt="no">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2>CHONG QING LUG</h2>
@@ -141,7 +140,7 @@
                 </div>
             </div>
             <div class="col-md-4 text-center">
-                <img src="assets/img/logo.png" height="128" alt="no">
+                <img src="assets/img/gnome-logo.svg" height="128" alt="no">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2>LINUX STORY</h2>
@@ -277,6 +276,19 @@
         navbarLableToggle("#a_sponsor ");
 
         $('body').scrollspy({target: '#my_navbar'})
+        $('#my_navbar').on('activate.bs.scrollspy', function () {
+            // do something…
+            var currentItem = $(".nav li.active > a").text();
+            if(currentItem != "Home"){
+                $(".main-navbar").css("background-color","rgba(90,160,245,.8)");
+            }else{
+                $(".main-navbar").css("background-color","transparent");
+            }
+        })
+//        email
+        $('#nav_btn_contact').click(function () {
+            parent.location.href='mailto:gnome@chongqinglug.org?subject=GnomeAsiaSummit2017';
+        });
     });
 </script>
 </body>

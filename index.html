@@ -48,7 +48,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <span><img class="visible-xs-block" height="64px" src="http://i2.muimg.com/567571/75cea87e6adec527.png" alt="Top"></span>
+                <span><img id class="visible-xs-block" height="64px" src="http://i2.muimg.com/567571/75cea87e6adec527.png" alt="Top"></span>
                 <span><img class="visible-sm-block visible-md-block visible-lg-block" height="128px"
                            src="http://i2.muimg.com/567571/75cea87e6adec527.png" alt="Top"></span>
                 <!--<span>Bootstrap theme</span>-->
@@ -64,7 +64,7 @@
                 <li><a id="a_sponsor" href="#div_sponsor">Sponsor</a></li>
                 <li>
                     <form class="navbar-form navbar-left" role="search">
-                        <button id="nav_btn_contact" class="btn btn btn-default navbar-btn" type="button">Contact</button>
+                        <button id="nav_btn_contact" class="btn btn btn-danger navbar-btn" type="button">Contact</button>
                     </form>
                 </li>
             </ul>
@@ -82,16 +82,6 @@
             <h1 id="h1_top">GNOME ASIA 2017</h1>
             <hr>
             <h2>T H E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S O U R C E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A W A K E N S</h2>
-            <!--<blockquote>-->
-            <!--<h2>Free source shares,open minds inspire</h2>-->
-            <!--<footer>An amazing exprience you never imagine-->
-            <!--A delightful learning platform to meet master-->
-            <!--We wish you a warm welcome to come!</footer>-->
-            <!--</blockquote>-->
-            <!--<p id="p_top">Free source shares,open minds inspire-->
-            <!--An amazing exprience you never imagine-->
-            <!--A delightful learning platform to meet master-->
-            <!--We wish you a warm welcome to come!</p>-->
         </div>
     </div>
 
@@ -270,17 +260,18 @@
         });
     }
     $(function () {
-        navbarLableToggle("#a_home ");
-        navbarLableToggle("#a_about ");
-        navbarLableToggle("#a_venue ");
-        navbarLableToggle("#a_sponsor ");
+//        navbarLableToggle("#a_home");
+//        navbarLableToggle("#a_about");
+//        navbarLableToggle("#a_venue");
+//        navbarLableToggle("#a_sponsor");
 
         $('body').scrollspy({target: '#my_navbar'})
         $('#my_navbar').on('activate.bs.scrollspy', function () {
             // do something…
             var currentItem = $(".nav li.active > a").text();
             if(currentItem != "Home"){
-                $(".main-navbar").css("background-color","rgba(90,160,245,.8)");
+                $(".main-navbar").css("background-color","rgba(0,0,0,.5)");//"rgba(90,160,245,.8)");
+
             }else{
                 $(".main-navbar").css("background-color","transparent");
             }

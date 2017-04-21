@@ -58,8 +58,8 @@ p {
 }
 
 .navbar-nav > li > a {
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 25px;
+    font-weight: 500;
     padding-top: 24px;
     padding-bottom: 27px;
     color: #0f0f0f;
@@ -100,8 +100,16 @@ p {
     padding-top: 300px;
     color: #ffffff;
     height: 1024px;
-    /*background-image: url(../assets/img/top_bg.jpg);*/
-    background-image: url("http://i4.buimg.com/567571/a45e52dc73bf4a53.jpg");
+    background: url("http://i4.buimg.com/567571/a45e52dc73bf4a53.jpg") center no-repeat;
+}
+
+@media (min-width:2048px){
+    #div_top {
+        padding-top: 300px;
+        color: #ffffff;
+        height: 1024px;
+        background: url("http://i4.buimg.com/567571/a45e52dc73bf4a53.jpg") center no-repeat;
+    }
 }
 
 #div_top div > hr {
@@ -111,19 +119,28 @@ p {
     border-color: #f7f7f7;
 }
 
-#div_top div > h2 {
-    font-size: 50px;
-    font-weight: bold;
-}
-
 #h1_top {
     font-size: 100px;
     font-weight: bold;
     text-shadow: 5px 5px 0 rgba(0, 0, 0, .5);
 }
+@media (max-width:768px){
+    #h1_top {
+        font-size: 40px;
+        font-weight: bold;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
+    }
+}
 
-#p_top {
-    font-size: 20px;
+#div_top div > h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+@media (max-width:768px){
+    #div_top div > h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 
 /*content*/

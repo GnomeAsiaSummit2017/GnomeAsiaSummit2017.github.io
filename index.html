@@ -64,13 +64,32 @@
                 <li><a class="hvr-underline-from-center" id="a_sponsor" href="#div_sponsor">Sponsor</a></li>
                 <li>
                     <form class="navbar-form navbar-left" role="search">
-                        <button id="nav_btn_contact" class="btn btn btn-danger navbar-btn" type="button">Contact</button>
+                        <button id="nav_btn_contact" class="btn btn btn-danger navbar-btn" type="button" data-toggle="modal" data-target="#myModal">Contact</button>
                     </form>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Contact us via e-mail</h4>
+            </div>
+            <div class="modal-body">
+                send e-mail to :<br>
+                <a href="mailto:gnome@chongqinglug.org?subject=GnomeAsiaSummit2017">gnome@chongqinglug.org</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div data-spy="scroll" data-target="#my_navbar" style="position: relative;" data-offset="0">
     <!--gap-->
@@ -277,9 +296,9 @@
             }
         })
 //        email
-        $('#nav_btn_contact').click(function () {
-            parent.location.href='mailto:gnome@chongqinglug.org?subject=GnomeAsiaSummit2017';
-        });
+//        $('#nav_btn_contact').click(function () {
+//            parent.location.href='mailto:gnome@chongqinglug.org?subject=GnomeAsiaSummit2017';
+//        });
     });
 </script>
 </body>

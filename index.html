@@ -120,6 +120,7 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2>GNOME.ASIA SUMMIT</h2>
                         <p>GNOME.Asia Summit is the featured annual GNOME Conference in Asia. The event brings together the GNOME community in Asia to provide a forum for users, developers, foundation leaders, governments and businesses to discuss the present technology and future developments.</p>
+                        <a href="https://wiki.gnome.org/GnomeAsia/">https://wiki.gnome.org/GnomeAsia/</a>
                     </div>
                 </div>
             </div>
@@ -128,9 +129,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2>CHONG QING LUG</h2>
-                        <p>CHONG QING LUG is one of the local organizers of GNOME.Asia summit 2017. Chongqing LUG has nearly 500 local members and over 10 years of significant experience in organizing 20 successful events.
-                            <a href="https://chongqinglug.org/">https://chongqinglug.org/</a>
-                        </p>
+                        <p>CHONG QING LUG is one of the local organizers of GNOME.Asia summit 2017. Chongqing LUG has nearly 500 local members and over 10 years of significant experience in organizing 20 successful events.</p>
+                        <a href="https://chongqinglug.org/">https://chongqinglug.org/</a>
                     </div>
                 </div>
             </div>
@@ -139,9 +139,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2>LINUX STORY</h2>
-                        <p>LINUX STORY is one of the local organizers of GNOME.Asia summit 2017, With the fully support of 6000 contributors, Linux Story have been becoming one of the most popular news media of open source in mainland China.
-                            <a href="https://linuxstory.org/">https://linuxstory.org/</a>
-                        </p>
+                        <p>LINUX STORY is one of the local organizers of GNOME.Asia summit 2017, With the fully support of 6000 contributors, Linux Story have been becoming one of the most popular news media of open source in mainland China.</p>
+                        <a href="https://linuxstory.org/">https://linuxstory.org/</a>
                     </div>
                 </div>
             </div>
@@ -226,7 +225,7 @@
                     organizers in their efforts with organizing the GNOME Asia Summit 2017.
                     If you would like sponsor GNOME.Asia summit 2017, or want to learn more
                     about our sponsorship program, please read this document. For more info,
-                    please click <a class="btn btn-danger btn-sm" href="#">Contact</a>
+                    please click <button id="btn_Contact_bottom" class="btn btn-danger btn-sm" href="#">Contact</button>
                     to send an email to gnome@chongqinglug.org.</p>
             </div>
         </div>
@@ -277,6 +276,11 @@
                 $("#narbar_logo_small").attr("src","http://i2.muimg.com/567571/75cea87e6adec527.png");
             }
         })
+        $("#btn_Contact_bottom").click(function () {
+            location.href = "#";
+            $("#nav_btn_contact").click();
+        });
+
 //        email
 //        $('#nav_btn_contact').click(function () {
 //            parent.location.href='mailto:gnome@chongqinglug.org?subject=GnomeAsiaSummit2017';

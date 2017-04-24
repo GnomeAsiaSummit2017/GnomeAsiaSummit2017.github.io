@@ -48,8 +48,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <span><img id class="visible-xs-block" height="64px" src="http://i2.muimg.com/567571/75cea87e6adec527.png" alt="Top"></span>
-                <span><img class="visible-sm-block visible-md-block visible-lg-block" height="128px"
+                <span><img id="narbar_logo_samll" class="visible-xs-block" height="64px" src="http://i2.muimg.com/567571/75cea87e6adec527.png" alt="Top"></span>
+                <span><img id="narbar_logo_big" class="visible-sm-block visible-md-block visible-lg-block" height="128px"
                            src="http://i2.muimg.com/567571/75cea87e6adec527.png" alt="Top"></span>
                 <!--<span>Bootstrap theme</span>-->
             </a>
@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div class="col-md-4 text-center">
-                <img src="assets/img/gnome-logo.svg" height="128" alt="no">
+                <img src="http://i2.muimg.com/567571/f79959e9b5984eca.png" height="128" alt="no">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2>CHONG QING LUG</h2>
@@ -290,9 +290,12 @@
             var currentItem = $(".nav li.active > a").text();
             if(currentItem != "Home"){
                 $(".main-navbar").css("background-color","rgba(0,0,0,.5)");//"rgba(90,160,245,.8)");
-
+                $("#narbar_logo_big").attr("src","http://i4.buimg.com/567571/0dc8b3aff76c8312.png");
+                $("#narbar_logo_small").attr("src","http://i4.buimg.com/567571/0dc8b3aff76c8312.png");
             }else{
                 $(".main-navbar").css("background-color","transparent");
+                $("#narbar_logo_big").attr("src","http://i2.muimg.com/567571/75cea87e6adec527.png");
+                $("#narbar_logo_small").attr("src","http://i2.muimg.com/567571/75cea87e6adec527.png");
             }
         })
 //        email

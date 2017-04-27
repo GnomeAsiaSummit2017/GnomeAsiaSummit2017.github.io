@@ -100,7 +100,7 @@ p {
     padding-top: 300px;
     color: #ffffff;
     height: 1024px;
-    background: url("http://i4.buimg.com/567571/a45e52dc73bf4a53.jpg") center no-repeat;
+    background: url("http://i2.muimg.com/567571/fed5bc4d45a79e83.jpg") no-repeat;
 }
 
 @media (min-width:2048px){
@@ -108,7 +108,16 @@ p {
         padding-top: 300px;
         color: #ffffff;
         /*height: 1024px;*/
-        background: url("http://i4.buimg.com/567571/a45e52dc73bf4a53.jpg") center no-repeat;
+        background: url("http://i2.muimg.com/567571/fed5bc4d45a79e83.jpg") center no-repeat;
+    }
+}
+
+@media (max-width:1024px){
+    #div_top {
+        padding-top: 300px;
+        color: #ffffff;
+        height: 512px;
+        background: url("http://i2.muimg.com/567571/fed5bc4d45a79e83.jpg") center no-repeat;
     }
 }
 

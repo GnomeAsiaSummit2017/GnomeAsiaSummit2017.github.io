@@ -6,11 +6,6 @@ function navbarLableToggle(text) {
     });
 }
 $(function () {
-//        navbarLableToggle("#a_home");
-//        navbarLableToggle("#a_about");
-//        navbarLableToggle("#a_venue");
-//        navbarLableToggle("#a_sponsor");
-
     $('body').scrollspy({target: '#my_navbar'})
     $('#my_navbar').on('activate.bs.scrollspy', function () {
         // do something…
@@ -29,9 +24,4 @@ $(function () {
         location.href = "#";
         $("#nav_btn_contact").click();
     });
-
-//        email
-//        $('#nav_btn_contact').click(function () {
-//            parent.location.href='mailto:gnome@chongqinglug.org?subject=GnomeAsiaSummit2017';
-//        });
 });

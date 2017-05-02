@@ -96,17 +96,22 @@ p {
 }
 
 /*top*/
-#div_top {
-    padding-top: 300px;
-    color: #ffffff;
-    width: 100%;
-    height: 1000px;
-    /*background-repeat:no-repeat;*/
-    background-size: 100px 20px;
-    background: url("http://i2.muimg.com/567571/0c637b6f4be57d14.jpg") center;
+@media (min-width:992px) {
+    #div_top {
+        padding-top: 300px;
+        color: #ffffff;
+        width: 100%;
+        height: 1000px;
+        /*background-repeat:no-repeat;*/
+        background-size: 100px 20px;
+        background: url("http://i2.muimg.com/567571/f481558d9cfc770c.jpg") center;
+    }
+    #div_top>div {
+        visibility: hidden;
+    }
 }
 
-@media (max-width:1024px){
+@media (max-width:992px){
     #div_top {
         padding-top: 150px;
         color: #ffffff;

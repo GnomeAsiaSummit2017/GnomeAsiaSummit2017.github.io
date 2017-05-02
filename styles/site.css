@@ -99,25 +99,20 @@ p {
 #div_top {
     padding-top: 300px;
     color: #ffffff;
-    height: 1024px;
-    background: url("http://i2.muimg.com/567571/fed5bc4d45a79e83.jpg") no-repeat;
-}
-
-@media (min-width:2048px){
-    #div_top {
-        padding-top: 300px;
-        color: #ffffff;
-        /*height: 1024px;*/
-        background: url("http://i2.muimg.com/567571/fed5bc4d45a79e83.jpg") center no-repeat;
-    }
+    width: 100%;
+    height: 1000px;
+    /*background-repeat:no-repeat;*/
+    background-size: 100px 20px;
+    background: url("http://i2.muimg.com/567571/0c637b6f4be57d14.jpg") center;
 }
 
 @media (max-width:1024px){
     #div_top {
-        padding-top: 300px;
+        padding-top: 150px;
         color: #ffffff;
+        width: 100%;
         height: 512px;
-        background: url("http://i2.muimg.com/567571/fed5bc4d45a79e83.jpg") center no-repeat;
+        background: url("http://i2.muimg.com/567571/0c637b6f4be57d14.jpg") center no-repeat;
     }
 }
 
@@ -174,7 +169,7 @@ p {
 
 /*venue*/
 #div_venue {
-    padding-top: 50px;
+    padding-top: 72px;
     padding-bottom: 50px;
 }
 
@@ -200,6 +195,12 @@ p {
 }
 
 /*sponsor*/
+
+#div_sponsor {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
 #div_sponsor_logo {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -221,6 +222,10 @@ p {
 /*footer*/
 #footer-bottom {
     padding-top: 100px;
+    color: white;
+}
+.label-info{
+    background-color: rgba(0, 0, 0, .5);
 }
 
 /*Animation*/

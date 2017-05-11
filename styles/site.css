@@ -24,6 +24,8 @@ p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+    word-wrap:break-word;
+    word-break: keep-all;
 }
 
 /*narbar*/
@@ -37,7 +39,8 @@ p {
 }
 
 #navbar > ul > li > a {
-    height: 20px;
+    margin-top: 8px;
+    height: 50px;
 }
 
 .main-navbar a {
@@ -45,7 +48,7 @@ p {
 }
 
 /*.main-navbar a:hover {*/
-    /*color: #fff*/
+/*color: #fff*/
 /*}*/
 
 .main-navbar .nav > li > a:focus, .main-navbar .nav > li > a:hover {
@@ -103,7 +106,9 @@ p {
         width: 100%;
         height: 1000px;
         /*background-repeat:no-repeat;*/
-        background-size: 100px 20px;
+        background-origin: border-box;
+        background-clip: border-box;
+        background-size: 100%;
         background: url("http://i2.muimg.com/567571/f481558d9cfc770c.jpg") center no-repeat;
     }
     #div_top>div {
@@ -113,10 +118,10 @@ p {
 
 @media (max-width:992px){
     #div_top {
-        padding-top: 150px;
+        padding-top: 300px;
         color: #ffffff;
         width: 100%;
-        height: 512px;
+        height: 1000px;
         background: url("http://i2.muimg.com/567571/0c637b6f4be57d14.jpg") center no-repeat;
     }
 }
@@ -197,6 +202,51 @@ p {
 
 #p_venue {
     font-size: 20px;
+}
+
+@media (max-width:850px) {
+    #h1_venue {
+        font-size: 50px;
+    }
+
+    #hr_venue {
+        max-width: 150px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        border-width: 2px;
+        border-color: #ebebeb;
+    }
+
+    #h2_venue {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #p_venue {
+        font-size: 15px;
+    }
+}
+@media (max-width:600px) {
+    #h1_venue {
+        font-size: 30px;
+    }
+
+    #hr_venue {
+        max-width: 150px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-width: 2px;
+        border-color: #ebebeb;
+    }
+
+    #h2_venue {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #p_venue {
+        font-size: 10px;
+    }
 }
 
 /*sponsor*/
